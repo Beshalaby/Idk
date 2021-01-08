@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://icon2.cleanpng.com/20180501/wzq/kisspng-twitch-emote-pogchamp-trihex-video-game-5ae91c86178d89.3374632415252266300965.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFST-FGQVg1uMY3CCnyDM_T0MVxyW67Rc",
+    authDomain: "chatapp-56b41.firebaseapp.com",
+    databaseURL: "https://chatapp-56b41-default-rtdb.firebaseio.com",
+    projectId: "chatapp-56b41",
+    storageBucket: "chatapp-56b41.appspot.com",
+    messagingSenderId: "439850325438",
+    appId: "1:439850325438:web:ff43a98fa91a93012855ef"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  </head>
+  <body class="chatBody">
+
+    <header class="navHeader">
+      <div class="headContainer">
+        <h1 id="title">Idk</h1>
+        <nav class="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#forumMine">Random</a></li>
+            <li><a href="chatMine.html">Chat Thing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="restOfChat">
+      <div class="formParent">
+      <div class="form">
+        <input type="text" id="inputed" placeholder="Enter Message Here">
+        <button type="submit" onclick=takeSubmition();><strong>;-;</strong></button>
+      </div>
+      </div>
+      <div class="chatText">
+        <h2 id="text1"></h2>
+      </div>
+
+    
+
+<script src="chat.js"></script>
+
+<div class="historyContainer">
+<ul id="chatList">
+<!--li inserted through DOM -->
+</ul>
+</div>
+    </div>
+  </body>
+</html> 
